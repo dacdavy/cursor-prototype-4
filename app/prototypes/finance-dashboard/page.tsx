@@ -225,12 +225,17 @@ export default function FinanceDashboard() {
                       boxHeight: 8,
                       generateLabels: (chart) => {
                         const data = chart.data;
-                        return data.labels.map((label, i) => ({
-                          text: `${label}  $${data.datasets[0].data[i].toLocaleString()}`,
-                          fillStyle: data.datasets[0].backgroundColor[i],
-                          hidden: false,
-                          index: i,
-                        }));
+                        if (!data.labels || !data.datasets?.[0]) return [];
+                        return data.labels.map((label, i) => {
+                          const value = data.datasets[0].data[i];
+                          const bgColors = data.datasets[0].backgroundColor as string[];
+                          return {
+                            text: `${label}  $${typeof value === 'number' ? value.toLocaleString() : '0'}`,
+                            fillStyle: bgColors[i],
+                            hidden: false,
+                            index: i,
+                          };
+                        });
                       }
                     }
                   },
@@ -242,7 +247,7 @@ export default function FinanceDashboard() {
                     titleFont: {
                       family: '-apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif',
                       size: 13,
-                      weight: '600',
+                      weight: 600,
                     },
                     bodyFont: {
                       family: '-apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif',
