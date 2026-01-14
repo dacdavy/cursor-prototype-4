@@ -8,7 +8,7 @@
 // 4. Rename and customize the component and styles as needed
 
 import { useState } from 'react';
-import Link from 'next/link';
+import BackButton from '@/app/components/BackButton';
 import styles from './styles.module.css';
 
 interface Task {
@@ -48,6 +48,7 @@ export default function Tasks() {
 
   return (
     <div className={styles.container}>
+      <BackButton />
       <h1 className={styles.title}>Tasks</h1>
       
       <form onSubmit={addTask} className={styles.form}>

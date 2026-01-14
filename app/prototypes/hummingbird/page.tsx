@@ -8,6 +8,7 @@
 // 4. Rename and customize the component and styles as needed
 
 import { useState } from 'react';
+import BackButton from '@/app/components/BackButton';
 import styles from './vintage-mac.module.css';
 
 interface Post {
@@ -58,9 +59,11 @@ export default function HummingbirdFeed() {
 
   return (
     <div className={styles.container}>
+      <BackButton />
+      
       <div className={styles.window}>
         <div className={styles.titleBar}>
-          <h1 className={styles.titleText}>New post</h1>
+          <h1 className={styles.titleText}>New Post</h1>
         </div>
         <form onSubmit={handleSubmit} className={styles.postForm}>
           <textarea
