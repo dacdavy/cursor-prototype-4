@@ -135,7 +135,7 @@ export default function FinanceDashboard() {
                     titleFont: {
                       family: '-apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif',
                       size: 13,
-                      weight: '600',
+                      weight: 600,
                     },
                     bodyFont: {
                       family: '-apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif',
@@ -160,7 +160,7 @@ export default function FinanceDashboard() {
                       color: '#8e8e93',
                       font: {
                         size: 11,
-                        weight: '400',
+                        weight: 400,
                         family: '-apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif',
                       },
                       padding: 8,
@@ -181,7 +181,7 @@ export default function FinanceDashboard() {
                       color: '#000',
                       font: {
                         size: 12,
-                        weight: '400',
+                        weight: 400,
                         family: '-apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif',
                       },
                       padding: 8,
@@ -216,7 +216,7 @@ export default function FinanceDashboard() {
                       color: '#000',
                       font: {
                         size: 14,
-                        weight: '400',
+                        weight: 400,
                         family: '-apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif',
                       },
                       usePointStyle: true,
@@ -277,7 +277,7 @@ export default function FinanceDashboard() {
                     titleFont: {
                       family: '-apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif',
                       size: 13,
-                      weight: '600',
+                      weight: 600,
                     },
                     bodyFont: {
                       family: '-apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif',
@@ -302,7 +302,7 @@ export default function FinanceDashboard() {
                       color: '#8e8e93',
                       font: {
                         size: 11,
-                        weight: '400',
+                        weight: 400,
                         family: '-apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif',
                       },
                       padding: 8,
@@ -323,7 +323,7 @@ export default function FinanceDashboard() {
                       color: '#000',
                       font: {
                         size: 12,
-                        weight: '400',
+                        weight: 400,
                         family: '-apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif',
                       },
                       padding: 8,
